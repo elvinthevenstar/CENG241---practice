@@ -50,6 +50,7 @@ int main() {
     cout << student4.getFirstName() << " " << student4.getLastName() << endl;
     cout << "Student 5: ";
     //cout << student5.print();?
+    student5.print(); //std::cout will expect a return value and personType::print() returns void which will cause an error
     
     return 0;
 }
