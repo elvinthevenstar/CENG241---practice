@@ -11,7 +11,7 @@ class Integer {
 
 Integer& Integer::increment(Integer& obj) {
     num += obj.num ;
-    return obj; // would return parameter object instead of invoking object
+    return *this; // return obj would return parameter object instead of invoking object, doesnt work if parameter object is the invoking object
 }
 
 int main() {
